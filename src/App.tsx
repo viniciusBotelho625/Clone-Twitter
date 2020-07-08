@@ -1,9 +1,13 @@
 import React from 'react';
 
+import GlobalStyles from './styles/GlobalStyled';
 
 function App() {
   return (
-    <h1>Vincius Botelho</h1>
+    <>
+        <h1>Vinicius Botelho</h1>
+        <GlobalStyles/>
+    </>
   );
 }
 
