@@ -1,11 +1,13 @@
 import React from 'react';
 
 import GlobalStyles from './styles/GlobalStyled';
+import Layout from './components/Layout';
 
 function App() {
   return (
     <>
-        <h1>Vinicius Botelho</h1>
+        <Layout />
+        
         <GlobalStyles/>
     </>
   );
