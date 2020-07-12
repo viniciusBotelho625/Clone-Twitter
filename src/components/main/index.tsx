@@ -30,8 +30,8 @@ const main: React.FC = () => {
           <ProfilePage /> 
 
           <BottomMenu>
-              <HomeIcon className="active"/>
-              <SearchIcon />
+              <SearchIcon className="active"/>
+              <HomeIcon />
               <BellIcon />
               <EmailIcon />
           </BottomMenu>
