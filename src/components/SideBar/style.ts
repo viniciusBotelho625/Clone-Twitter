@@ -18,7 +18,7 @@ export const SearchWrapper = styled.div`
     position: fixed;
     top: 0;
     z-index: 2;
-    color: var(--primary);
+    background: var(--primary);
     max-height: 57px;
 
 `;
@@ -66,4 +66,8 @@ export const Body = styled.div`
     flex-direction: column;
     padding: 57px 24px 200px;
     margin-top: 3px;
+
+    > div + div {
+        margin-top: 15px;
+    }
 `;

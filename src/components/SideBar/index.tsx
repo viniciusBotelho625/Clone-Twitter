@@ -1,4 +1,6 @@
 import React from 'react';
+import List from '../List';
+import FullowSuggestion from '../FullowSuggestion';
 
 import { 
     Container, 
@@ -17,7 +19,26 @@ const SideBar: React.FC = () => {
             </SearchWrapper>
 
             <Body>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident quas repellat sint excepturi ipsa voluptatem. Incidunt assumenda corporis ut blanditiis est amet aut ab laudantium magni accusamus, ex debitis reprehenderit.</p>
+                <List 
+                    title="Talvez você curta"
+                    elements={[
+                        <FullowSuggestion 
+                            name="Yuri Ramalho" nickname="@yuriramalho"
+                        />,
+                        <FullowSuggestion 
+                            name="Lucas Souza" nickname="@fullstack"
+                        />,
+                        <FullowSuggestion 
+                            name="Rodrigo Guirra" nickname="@guirra"
+                        />
+                        
+                    ]}
+                />
+                <List 
+                    title="Talvez você curta"
+                    elements={[<h1>Teste</h1>,<h1>Teste</h1>,<h1>Teste</h1>,
+                    ]}
+                />
             </Body>
         </Container>
     );
